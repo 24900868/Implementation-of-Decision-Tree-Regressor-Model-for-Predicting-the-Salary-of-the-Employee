@@ -8,19 +8,21 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
-
+```
+1.Import pandas
+2.Import Decision tree classifier
+3.Fit the data in the model
+4.Find the accuracy score
+```
 ## Program:
 ```
 /*
 Program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee.
 Developed by: M.Mahalakshmi
-RegisterNumber:24900868 
-*/
-```import pandas as pd
+RegisterNumber:24900868
+```
+```
+import pandas as pd
 data=pd.read_csv("Salary.csv")
 data.head()
 data.info()
@@ -43,10 +45,11 @@ mse
 r2=metrics.r2_score(y_test,y_pred)
 r2
 dt.predict([[5,6]])
+```
 
 ## Output:
 ![Decision Tree Regressor Model for Predicting the Salary of the Employee](sam.png)
-
+```
 Position	Level	Salary
 0	Business Analyst	1	45000
 1	Junior Consultant	2	50000
@@ -70,12 +73,14 @@ Level       0
 Salary      0
 dtype: int64
 
-	Position	Level	Salary
+Position	Level	Salary
 0	0	1	45000
 1	4	2	50000
 2	8	3	60000
 3	5	4	80000
 4	3	5	110000
+
+
 
 462500000.0
 
@@ -84,6 +89,7 @@ dtype: int64
 C:\ProgramData\anaconda3\Lib\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but DecisionTreeRegressor was fitted with feature names
   warnings.warn(
 array([200000.])
+```
 
 ## Result:
 Thus the program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee is written and verified using python programming.
